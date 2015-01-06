@@ -2,6 +2,10 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response) {
+  response.send('lalala');
+});
+
+app.get('/parts', function(request, response) {
   response.redirect(301, '/blocks')
 });
 
