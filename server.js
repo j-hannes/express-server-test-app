@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response) {
-  response.send('Hello World');
+  var blocks = ['one', 'two', 'three'];
+  response.send(blocks);
 });
 
 var port = process.env.PORT || 8080;
