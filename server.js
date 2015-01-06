@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
+var logger = require('./logger');
 
 app.use(express.static('public'));
+app.use(logger);
 
 app.get('/parts', function(request, response) {
-  response.redirect(301, '/blocks')
+  response.redirect(301, '/blocks');
 });
 
 app.get('/blocks', function(request, response) {
@@ -14,6 +16,6 @@ app.get('/blocks', function(request, response) {
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
-  console.log('Listening on', port);
+  console.log('Listening on', port, '...\n');
 });
 
