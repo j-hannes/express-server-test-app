@@ -1,0 +1,10 @@
+{
+  "name": "express server test app",
+  "version": "0.0.1",
+  "main": "server.js",
+  "author": "j-hannes",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.10.7"
+  }
+}
