@@ -2,6 +2,10 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response) {
+  response.redirect('/blocks')
+});
+
+app.get('/blocks', function(request, response) {
   var blocks = ['one', 'two', 'three'];
   response.send(blocks);
 });
