@@ -8,7 +8,7 @@ app.get('/parts', function(request, response) {
 });
 
 app.get('/blocks', function(request, response) {
-  var blocks = ['one', 'two', 'three'];
+  var blocks = ['Fixed', 'Movable', 'Rotating'];
   response.send(blocks);
 });
 
